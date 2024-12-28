@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga Games Speed Shop</title>
+    <!-- Link ke Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* Reset margin dan padding untuk elemen global */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Styling untuk body */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        padding: 10px;
+    }
+
+    /* Container utama untuk daftar harga */
+    .price-container {
+        max-width: 1000px; /* Agar container lebih responsif pada layar kecil */
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    /* Judul halaman */
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px; /* Ukuran font yang lebih responsif */
+        font-weight: 600;
+        color: #2d2d2d;
+        margin-bottom: 30px;
+    }
+
+    /* Grid untuk daftar harga */
+    .price-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    /* Styling untuk setiap item harga */
+    .price-item {
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efek hover pada item harga */
+    .price-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Gambar produk */
+    .product-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Nama produk */
+    .product-name {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #2d2d2d;
+        margin-bottom: 10px;
+    }
+
+    /* Deskripsi produk */
+    .product-description {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    /* Harga produk */
+    .product-price {
+        font-size: 20px;
+        font-weight: 600;
+        color: #27ae60;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+        .price-container {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .price-item {
+            padding: 12px;
+        }
+
+        .product-name {
+            font-size: 16px;
+        }
+
+        .product-price {
+            font-size: 18px;
+        }
+    }
+
+    /* Responsif untuk ponsel */
+    @media (max-width: 480px) {
+        .price-container {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .price-item {
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 20px;
+        }
+
+        .product-price {
+            font-size: 15px;
+        }
+
+        .product-image {
+            height: 300px; /* Menurunkan tinggi gambar pada ponsel */
+        }
+        .product-image1 {
+            height: 230px; /* Menurunkan tinggi gambar pada ponsel */
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Container utama untuk daftar harga -->
+    <div class="price-container">
+        <h1>Silahkan Cek Harga Yang Ingin Kakak Order</h1>
+
+        <!-- Daftar harga produk -->
+        <ul class="price-list">
+            <li class="price-item">
+                <img src="gamesspeedshopvip.jpg" alt="Config Fix Lag Vip - Menghilangkan lag dan patah-patah" class="product-image">
+                <div class="product-name">Config Fix Lag Vip</div>
+                <div class="product-description">
+                    File ini sangat membantu untuk menghilangkan lag patah-patah dan pastinya aman digunakan di akun utama.
+                </div>
+                <!-- <div class="product-price">Rp 50.000</div> -->
+            </li>
+
+            <li class="price-item">
+                <img src="file special gamesspeedshop.jpg" alt="File Special Booster - Menghilangkan lag di semua game" class="product-image1">
+                <div class="product-name">File Special Booster</div>
+                <div class="product-description">
+                    File ini dapat menghilangkan lag pada semua game dan lebih lancar digunakan di perangkat dengan spesifikasi rendah.
+                </div>
+                <!-- <div class="product-price">Rp 60.000</div> -->
+            </li>
+
+            <li class="price-item">
+                <img src="panel vvip gamesspeedshop.jpg" alt="Injektor FF Vip - Push rank dengan mudah" class="product-image1">
+                <div class="product-name">Injektor FF Vip</div>
+                <div class="product-description">
+                    Injektor ini cocok untuk yang ingin push rank dengan tampilan sederhana dan mudah digunakan tanpa risiko tinggi.
+                </div>
+                <!-- <div class="product-price">Rp 70.000</div> -->
+            </li>
+
+            <li class="price-item">
+                <img src="regedit gamesspeedshop.jpg" alt="Regedit Vip - Meningkatkan performa bidikan AIM" class="product-image">
+                <div class="product-name">Regedit Vip</div>
+                <div class="product-description">
+                    Regedit ini sangat membantu meningkatkan bidikan AIM Anda di game, cocok untuk meningkatkan performa di FPS.
+                </div>
+                <!-- <div class="product-price">Rp 80.000</div> -->
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
